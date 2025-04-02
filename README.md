@@ -78,6 +78,8 @@ This project demonstrates how machine learning can effectively predict customer 
 
 ---
 📢 Contributors: Vartika Singh
+
 📧 Contact: 2001vartikasingh@gmail.com
-🔗 GitHub: [Your Repository Link]
+
+🔗 GitHub: https://github.com/vartikasingh1703?tab=repositories
 
