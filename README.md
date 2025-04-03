@@ -1,13 +1,16 @@
-# Bank_Customer_Attrition
-# Customer Churn Prediction - XYZ Multinational Bank
+# Customer Churn Prediction for XYZ Multinational Bank
 
-## 📌 Project Overview
+## Overview
 Customer retention is a fundamental aspect of any business, particularly for banks, where acquiring new customers can be significantly more costly than retaining existing ones. This project aims to predict customer churn for XYZ Multinational Bank by analyzing customer behavior and key attributes. By leveraging machine learning techniques, we aim to identify high-risk customers and suggest proactive measures to improve retention rates.
 
 ## 📂 Dataset Overview
 https://www.kaggle.com/datasets/marusagar/bank-customer-attrition-insights/data
-The dataset contains customer information from XYZ Multinational Bank. The target variable is **Exited**, indicating whether a customer has left the bank (1) or stayed (0). The dataset includes attributes such as:
+The dataset consists of customer details, including demographics, account features, and engagement levels. The target variable is Exited, where:
 
+1 - Customer has left the bank.
+0 - Customer remains with the bank.
+
+Key Features:
 - CreditScore - Customer's creditworthiness.
 - Geography - Location of the customer.
 - Gender - Customer's gender.
@@ -41,12 +44,18 @@ The dataset contains customer information from XYZ Multinational Bank. The targe
 ### 3️⃣ Model Selection & Training
 - Split Data: Divide dataset into training (80%) and testing (20%) sets.
 - Baseline Models: Train initial models including:
-  - Random Forest
-  - XGBoost
+-    Model                   Mean Accuracy
+     Logistic Regression      0.9984
+     Decision Tree            0.9980
+     Random Forest            0.9986
+     XGBoost                  0.9986
+   
 - Hyperparameter Tuning:
-  - Use GridSearchCV to fine-tune the Random Forest Classifier, achieving:
-    - Accuracy: 99.86%
-    - ROC-AUC Score: 99.92%
+  - We used GridSearchCV to fine-tune hyperparameters for better accuracy and 
+    performance. The best hyperparameters improved the model's ROC-AUC score 
+    significantly, achieving:
+    - Random Forest  - 0.9992
+    - XGBoost        - 0.9993
 
 ### 4️⃣ Model Evaluation
 - Performance Metrics Used:
@@ -77,7 +86,7 @@ This project demonstrates how machine learning can effectively predict customer 
 - Integrate additional features like transaction history and social media sentiment analysis.
 
 ---
-📢 Contributors: Vartika Singh
+📢 Contributor: Vartika Singh
 
 📧 Contact: 2001vartikasingh@gmail.com
 
